@@ -1,4 +1,5 @@
 from csv import reader
+import csv
 
 
 class Character:
@@ -28,3 +29,11 @@ class Character:
         with open('char_items.csv', 'r')as f:
             reader = csv.DictReader(f)
             items = list(reader)
+        for chars in items:
+            Character(
+                name=chars.get('name'),
+                level=int(chars.get('level')),
+                max_health=int(chars.get('max_health')),
+                current_health=int(chars.get('current_health')),
+                knocked_out=bool(chars.get('knocked_out')),
+            )
