@@ -37,3 +37,7 @@ class Character:
                 current_health=int(chars.get('current_health')),
                 knocked_out=bool(chars.get('knocked_out')),
             )
+
+    # Method that will print the stats of the character
+    def character_info(self):
+        print(f"{self.name}\nCurrent Level: {self.level}\nMax Health: {self.max_health}\nCurrent Health: {self.current_health}\nKnocked Out: {self.knocked_out}")
