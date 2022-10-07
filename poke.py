@@ -13,3 +13,7 @@ class Character:
         self.max_health = max_health
         self.current_health = current_health
         self.knocked_out = knocked_out
+
+    # Create str function:
+    def __str__(self) -> str:
+        return f"{self.name} -- Current Level: {self.level}, Max Health: {self.max_health}, Current Health: {self.current_health}, Knocked Out Status: {self.knocked_out}"
