@@ -16,4 +16,5 @@ class Character:
 
     # Create str function:
     def __str__(self) -> str:
+        # Return current information of character
         return f"{self.name} -- Current Level: {self.level}, Max Health: {self.max_health}, Current Health: {self.current_health}, Knocked Out Status: {self.knocked_out}"
