@@ -22,6 +22,7 @@ class Character:
         # Return current information of character
         return f"{self.name} -- Current Level: {self.level}, Max Health: {self.max_health}, Current Health: {self.current_health}, Knocked Out Status: {self.knocked_out}"
 
+    # Method that will store character information in csv file
     @classmethod
     def instantiate_csv(cls):
         with open('char_items.csv', 'r')as f:
