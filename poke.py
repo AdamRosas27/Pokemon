@@ -5,6 +5,8 @@ class Character:
         # Make sure the name given is a valid length
         assert len(
             name) > 1, f"Name {name} is too short. Name cannot be less than 2 characters."
+        assert len(
+            name) <= 10, f"Name {name} is too long. name cannot be more than 10 characters."
 
         self.name = name
         self.level = level
